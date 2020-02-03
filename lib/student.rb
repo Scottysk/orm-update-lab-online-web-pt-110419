@@ -58,7 +58,8 @@ end
       SELECT * FROM students WHERE name = ?
       SQL
       DB[:conn].execute(sql, name).map do |row|
-        new_from_db(row)
+        new_from_db(row).first
+      end
       
   end
 
