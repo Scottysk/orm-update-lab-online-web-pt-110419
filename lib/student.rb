@@ -62,7 +62,7 @@ end
 
   def update
     sql = <<-SQL
-      
+      UPDATE students
     SQL
   end
   
