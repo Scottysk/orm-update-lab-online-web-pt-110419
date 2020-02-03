@@ -27,7 +27,7 @@ class Student
       DB[:conn].execute(sql)
   end
   
-  	  def save
+  def save
     if !@id
       sql = <<-SQL
         INSERT INTO students (name, grade)
@@ -39,9 +39,9 @@ class Student
     else
       sql = "UPDATE students SET name = ? WHERE id = ?"
       DB[:conn].execute(sql, @name, @id)
-    end
-
   end
+
+end
 
   
 
