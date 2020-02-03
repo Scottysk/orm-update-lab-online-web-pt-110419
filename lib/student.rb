@@ -47,6 +47,8 @@ end
     student_new.save
     student_new
   end
+  
+  def student.new_from_db
 
   
 
