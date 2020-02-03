@@ -27,7 +27,7 @@ class Student
       DB[:conn].execute(sql)
   end
   
-  def self.create_table
+  def save
     sql = <<-SQL
       CREATE TABLE IF NOT EXISTS students (
       id INTEGER PRIMARY KEY,
