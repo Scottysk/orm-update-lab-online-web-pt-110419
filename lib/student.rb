@@ -67,7 +67,7 @@ end
       WHERE id = ?
     SQL
     
-    db[:conn].execute(sql, self.name, self.grade)
+    db[:conn].execute(sql, self.name, self.grade, self.id)
   end
   
 
