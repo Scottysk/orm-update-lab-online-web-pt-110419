@@ -32,7 +32,7 @@ class Student
       INSERT INTO students(name, grade)
       VALUES (?, ?)
       SQL
-      DB[:conn].execute(SELECT last_insert_rowid() FROM STUDENTS)
+      DB[:conn].execute(SELECT last_insert_rowid() FROM students")
   end
 
   
