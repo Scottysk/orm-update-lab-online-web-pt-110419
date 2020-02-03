@@ -65,8 +65,9 @@ end
       UPDATE students
       SET name = ?, grade = ?
       WHERE id = ?
-      
     SQL
+    
+    db[:conn]
   end
   
 
