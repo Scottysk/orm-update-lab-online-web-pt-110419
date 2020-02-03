@@ -49,6 +49,9 @@ end
   end
   
   def student.new_from_db
+    
+    
+  end
 
   
 
