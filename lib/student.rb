@@ -60,7 +60,6 @@ end
       DB[:conn].execute(sql, name).map do |row|
         new_from_db(row).first
       end
-      
   end
 
   
