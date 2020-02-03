@@ -67,7 +67,7 @@ end
       WHERE id = ?
     SQL
     
-    db[:conn].execute(sql,)
+    db[:conn].execute(sql, self.name, )
   end
   
 
