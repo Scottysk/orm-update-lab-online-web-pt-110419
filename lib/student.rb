@@ -39,11 +39,10 @@ class Student
     else
       sql = "UPDATE students SET name = ? WHERE id = ?"
       DB[:conn].execute(sql, @name, @id)
-  end
-
+  en
 end
 
-  def self.create(name:, grade:)
+  def self.create(name, grade)
     student_new = self.new(name, grade)
     student_new.save
     student_new
