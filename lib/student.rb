@@ -54,10 +54,8 @@ end
   end
   
   def self.find_by_name(name)
-    sql = <<-SQL
-      SELECT * FROM students WHERE name = ?
-      SQL
-      DB[:conn].execute(sql, name).map { |row| new_from_db(row) }.first
+    sql = "UPDATE students SET name = ?, grade = ? WHERE id = ?"
+    DB[:conn].execute(sql, self.name, self.grade, self.id)
   end
 
   
